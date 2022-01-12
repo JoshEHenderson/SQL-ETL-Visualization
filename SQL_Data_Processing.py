@@ -18,7 +18,7 @@ import sqlite3
 import pandas as pd
 import numpy as np
 
-DIR = 'C:\\Users\\joshu\\OneDrive - The University of South Dakota\\2021 Fall Coursework\\Data Mining\\Programming Projects\\Programming Project 1\\db.sqlite3'
+DIR = #Insert Directory for SQL Database here
 
 # Connect to database
 conn = sqlite3.connect(DIR)
@@ -97,4 +97,3 @@ dw_df['creationDate'] = pd.to_datetime(dw_df['creationDate']) # turn creationDat
 file = open('dw_df.csv', 'w')   # open a new csv file called 'dw_df.csv' for writing
 file.write( dw_df.to_csv() )    # write dw_df to the file in csv format
 file.close()                    # close the file and write it to the current working directory
-
